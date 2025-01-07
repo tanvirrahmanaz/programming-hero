@@ -63,3 +63,16 @@ header{
 .banner-profile-pic{
     width: 520px;
 }
+
+
+
+/* about section */
+
+.about{
+
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
