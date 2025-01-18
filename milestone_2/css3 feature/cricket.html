@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket height</title>
+    <style>
+        .field{
+            border: 1px solid steelblue;
+        }
+        .bat{
+            transition: transform 0.3s ease-in;
+        }
+        .bal{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 390px;
+            transition: transform 0.5s ease-out 0.3s;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin:top right;
+        }
+        .field:hover .bal{
+            transform: translate(500px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="https://rukminim1.flixcart.com/image/300/300/jkk1hu80/bat/c/n/p/1162-bum-bum-bhole-short-handle-9332921103425-spartan-original-imaf7vhzsz2uxmcn.jpeg" alt="">
+        <div class="bal"></div>
+    </div>
+</body>
+</html>
