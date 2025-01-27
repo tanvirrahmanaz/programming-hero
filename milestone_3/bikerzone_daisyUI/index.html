@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .font-poppins{
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                'bike-primary' : '#E76F51',
+                'bike-primary-bg' : 'rgba(231, 111, 81, 0.1)'
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Header section  -->
+    <header class="md:container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="font-bold text-xl">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                        </ul>
+                      </details>
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="btn  bg-bike-primary text-white">Log in</a>
+                </div>
+              </div>
+        </nav>
+
+    <!-- slider section  -->
+     <div class="carousel w-full my-6">
+        <!-- slide 1  -->
+        <div id="slide1" class="carousel-item relative w-full lg:h-[550px] bg-bike-primary-bg rounded-2xl ">
+            <div class="lg:flex flex-row py-8 lg:py-20  px-8 lg:px-32 ">
+                <!-- text section  -->
+                <div class="space-y-7 flex-1">
+                    <h1 class="lg:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                    <p class="lg:w-1/2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-bike-primary text-white flex-1">Purchase</button>
+                </div>
+                <!-- image section  -->
+                <div class="flex-1">
+                    <img src="images/slider/bike1.png" class="mt-10 lg:w-[400] lg:h-[345]" /></div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full lg:h-[550px] bg-bike-primary-bg rounded-2xl ">
+            <div class="lg:flex flex-row py-8 lg:py-20  px-8 lg:px-32 ">
+                <!-- text section  -->
+                <div class="space-y-7 flex-1">
+                    <h1 class="lg:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                    <p class="lg:w-1/2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-bike-primary text-white flex-1">Purchase</button>
+                </div>
+                <!-- image section  -->
+                <div class="flex-1">
+                    <img src="images/slider/bike2.png" class="mt-10 lg:w-[400] lg:h-[345]" /></div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full lg:h-[550px] bg-bike-primary-bg rounded-2xl ">
+            <div class="lg:flex flex-row py-8 lg:py-20  px-8 lg:px-32 ">
+                <!-- text section  -->
+                <div class="space-y-7 flex-1">
+                    <h1 class="lg:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                    <p class="lg:w-1/2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-bike-primary text-white flex-1">Purchase</button>
+                </div>
+                <!-- image section  -->
+                <div class="flex-1">
+                    <img src="images/slider/bike3.png" class="mt-10 lg:w-[400] lg:h-[345]" /></div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+
+        <!-- slide 4 -->
+         <!-- slide 1  -->
+        <div id="slide4" class="carousel-item relative w-full lg:h-[550px] bg-bike-primary-bg rounded-2xl ">
+            <div class="lg:flex flex-row py-8 lg:py-20  px-8 lg:px-32 ">
+                <!-- text section  -->
+                <div class="space-y-7 flex-1">
+                    <h1 class="lg:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1>
+                    <p class="lg:w-1/2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-bike-primary text-white flex-1">Purchase</button>
+                </div>
+                <!-- image section  -->
+                <div class="flex-1">
+                    <img src="images/slider/bike4.png" class="mt-10 lg:w-[400] lg:h-[345]" /></div>
+            </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!-- main section  -->
+    <main></main>
+    <!-- footer section  -->
+    <footer></footer>
+</body>
+</html>
