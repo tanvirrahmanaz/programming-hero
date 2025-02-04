@@ -1,1 +1,3 @@
-console.log(8)
+var age = 33;
+console.log(age)
+
