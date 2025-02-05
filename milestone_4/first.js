@@ -14,4 +14,4 @@ console.log(isRich);
 console.log(name);
 console.log(address);
 console.log(country);
-console.log(typeof country);
+console.log(typeof country); 
