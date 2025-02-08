@@ -5,3 +5,9 @@ console.log(numbers);
 for(const num of numbers){
     console.log(num);
 }
+
+let num =1;
+while(num < 10){
+    console.log(num);
+    num ++ ;
+}
