@@ -22,3 +22,17 @@ const last = 'Nabid';
 
 const fullname = first + " " + last;
 console.log(fullname)
+
+console.log(first.concat(' ').concat(last))
+
+
+// reverse strign 
+
+let reverse = '';
+for(const letter of sentence){
+    reverse = letter+ reverse;
+}
+console.log(reverse)
+
+const reversed = sentence.split('').reverse().join('')
+console.log(reversed )
