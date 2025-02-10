@@ -11,5 +11,16 @@ const bottle = {
     brand : "Apple",
     price : 45,
     color : "White",
-    isClean : false
+    isClean : false,
+    'selling area' : ['dhaka','comilla', 'jashore']
 }
+
+console.log(bottle.brand)
+console.log(bottle['color'])
+console.log(bottle['selling area'])
+
+// keys 
+const keys = Object.keys(bottle);
+const value = Object.values(bottle);
+console.log(keys)
+console.log(value)
