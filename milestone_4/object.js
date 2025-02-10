@@ -24,3 +24,11 @@ const keys = Object.keys(bottle);
 const value = Object.values(bottle);
 console.log(keys)
 console.log(value)
+
+
+//for of : array
+//for in : object
+for(const prob in bottle){
+    console.log(prob, bottle[prob])
+}
+
