@@ -15,12 +15,17 @@
         <ul>
             <li>jalala</li>
             <li>jalala</li>
-            <li>jalala</li>
+            <li>jalal</li>
         </ul>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        console.log("inside the html file")
+        const liCollection = document.getElementsByTagName('li')
+        console.log(liCollection)
+        for(const li of liCollection){
+            console.log(li.innerText);
+            console.log(li.innerHTML);
+        }
     </script>
 </body>
 </html>
