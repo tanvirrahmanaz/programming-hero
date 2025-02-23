@@ -16,3 +16,6 @@ btnMakeBlue.onclick = function btnMakeBlue(){
 }
 
 
+document.getElementById('btn-make-green').addEventListener('click',function makeGreen(){
+    document.body.style.backgroundColor= 'green'
+  })
