@@ -14,9 +14,17 @@
     <button onclick="makeYellow()">Make Yellow</button>
     <button onclick="makeRed()">Make RED </button><br>
 
+
+    <!-- option 3 -->
     <button id="btn-make-blue">Make blue</button>
+
+    <!-- option 4 -->
+    <br>
+    <button id="btn-make-green">Make green</button>
     <script>
-      
+      document.getElementById('btn-make-green').addEventListener('click',function makeGreen(){
+        document.body.style.backgroundColor= 'green'
+      })
     </script>
 
     <script src="JS/dom.js"></script>
