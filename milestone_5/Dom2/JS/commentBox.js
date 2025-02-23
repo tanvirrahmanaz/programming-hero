@@ -8,7 +8,7 @@ document.getElementById('btn-post-comment')
 
     // Prevent empty comments from being added
     if (newComment === '') {
-        alert("Comment cannot be empty!");
+        alert("Comment cannot be  empty!");
         return;
     }
 
