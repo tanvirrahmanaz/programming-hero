@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .comment {
+            border: 3px solid rgb(93, 93, 173);
+            background-color: lightcyan;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>My Awesome Comment Box - Write What's on Your Mind!!!</h1>
+    <section>
+        <h3>All Comments Here</h3>
+        <div class="comment-container"> <!-- Changed to class -->
+            <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="comment">Iusto dolore asperiores laboriosam incidunt quasi velit labore.</p>
+            <p class="comment">In numquam voluptate, vel eaque illo doloribus optio quaerat tenetur.</p>
+        </div>
+
+        <textarea id="comment-text-box" cols="60" rows="5"></textarea><br>
+        <button id="btn-post-comment">Post Comment</button>
+    </section>
+
+    <script src="JS/commentBox.js"></script> <!-- Ensure the file path is correct -->
+</body>
+</html>
