@@ -12,3 +12,10 @@
 // }
 
 // 0 falsy value,none string falsy value
+
+function sum(num1,num2){
+    var result = num1+ num2;
+    console.log(result)
+}
+
+sum(10,20)
