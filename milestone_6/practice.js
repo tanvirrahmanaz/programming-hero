@@ -1,21 +1,26 @@
-// // // let name = null;
-// // // console.log(typeof name)
+// // // // let name = null;
+// // // // console.log(typeof name)
 
-// // console.log(names)  --> undefined
+// // // console.log(names)  --> undefined
 
-// const name = "TANVIR RAHMAN"
-// if(name){
-//     console.log("This is truthly value")
+// // const name = "TANVIR RAHMAN"
+// // if(name){
+// //     console.log("This is truthly value")
+// // }
+// // else{s
+// //     console.log('this is falsy value')
+// // }
+
+// // 0 falsy value,none string falsy value
+
+// function sum(num1,num2){
+//     var result = num1+ num2;
+//     console.log(result)
 // }
-// else{s
-//     console.log('this is falsy value')
-// }
 
-// 0 falsy value,none string falsy value
+// sum(10,20)
 
-function sum(num1,num2){
-    var result = num1+ num2;
-    console.log(result)
+
+const loadUser = () =>{
+    console.log('hello world')
 }
-
-sum(10,20)
