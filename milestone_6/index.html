@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .card{
+            border: 2px solid gray;
+            margin: 5px;
+            padding: 10px;
+            text-align: center; 
+            background-color: bisque;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,9 +22,16 @@
 
         </ul>
     </div>
-
     <button onclick="loadUser()">Load user With index.js</button>
 
+    <!-- post section  -->
+
+    <h1>Load all posts</h1>
+
+    <div id="postContainer" class="post-container">
+         
+    </div>
+    <button onclick="handlePost()">Load post</button>
 
     <script src="practice.js"></script>
 </body>
