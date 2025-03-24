@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.person{
+  margin: 10px;
+  padding: 10px;
+  background-color: cadetblue;
+}
