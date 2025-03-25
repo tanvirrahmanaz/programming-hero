@@ -9,4 +9,4 @@ export default function ToDo({tasks,isDone}){
             <li>Pending: {tasks}</li>
            )
     }
-}
+}  
