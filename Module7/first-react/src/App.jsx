@@ -1,22 +1,28 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ToDo from "./Todo";
-import Counter from "./count"; // Corrected import
+import Counter from "./count"; // Corrected 
+//import
+import Users from "./users";
 
 function App() {
     return (
         <>
             <h1>Hello vai brother</h1>
             <Person />
-            <Person />
+            
             <Developer name="tanvir" tech="python" />
-            <Developer name="rajib" tech="java" />
+           
             <ToDo tasks="learn_react" isDone={true} />
             <ToDo tasks="Revise JS" isDone={false} />
             <ToDo tasks="take a Shower" isDone={false} />
             <Counter /> {/* Fixed component usage */}
+
+            <Users></Users>
+
+            <Suspense fallback={<h2>Loading...</h2>}></Suspense>
         </>
     );
 }
