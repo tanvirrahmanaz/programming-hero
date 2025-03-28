@@ -20,12 +20,28 @@ function App() {
             <ToDo tasks="take a Shower" isDone={false} />
             <Counter /> {/* Fixed component usage */}
 
-            <Users></Users>
+           
 
-            <Suspense fallback={<h2>Loading...</h2>}></Suspense>
+            
+
+
+
+
+            {/* json practice  */}
+            <Suspense fallback={<p>waiting for information</p>}>
+            <Users fetchUsers={fetchUsers}></Users>
+                </Suspense>
+
+
+
+
         </>
     );
 }
+
+
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
 
 function Person() {
     return (
