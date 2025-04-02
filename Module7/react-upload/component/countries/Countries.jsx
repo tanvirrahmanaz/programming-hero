@@ -12,11 +12,18 @@ const Countries = ({dataPromise}) => {
     
     const handlevisitedCountires = (country) => {
         console.log('country visited click to be added',country.name.common);
+        const newvisitedCountry = [...visitedCountries, country]
+        setVisitedCountires(newvisitedCountry)
     }
     return (
         <div>
            <h1>Travelling Countires {countries.length}</h1> 
-           <h3>Traveled so far: </h3>
+           <h3>Traveled so far:{visitedCountries.length} </h3>
+           <ol>
+            {
+                visitedCountries.map(country => <li>{country.name.common}</li>)
+            }
+           </ol>
            <div  className='countries'>
                 {
                 countries.map(countryData => 
