@@ -7,7 +7,7 @@ import Country from '../country/Country';
 const Countries = ({dataPromise}) => {
 
     const countries = use(dataPromise);
-    console.log(countries)
+    
 
     return (
         <div>
