@@ -1,0 +1,18 @@
+.country{
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.country-visited{
+    background-color: darkgray;
+}
+.btn-visited{
+    background-color: yellow;
+    color: black;
+}
+.btn-not-visited{
+    background-color: black;
+    color: white;
+}
