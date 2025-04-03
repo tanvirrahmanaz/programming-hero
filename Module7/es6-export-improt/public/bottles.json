@@ -1,0 +1,230 @@
+[
+    {
+      "id": 1,
+      "name": "Smart Water Bottle",
+      "brand": "AquaTech",
+      "capacity_ml": 750,
+      "material": "BPA-Free Plastic",
+      "color": "Blue",
+      "insulated": true,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 24.99,
+      "ratings": {
+        "average": 4.5,
+        "total_reviews": 987
+      },
+      "dimensions": {
+        "height_cm": 25,
+        "diameter_cm": 7.5,
+        "weight_g": 320
+      },
+      "availability": {
+        "in_stock": true,
+        "online": true,
+        "offline": ["Walmart", "Target", "Amazon"]
+      },
+      "features": [
+        "Temperature Display",
+        "Double-wall insulation",
+        "Keeps beverages hot for 12 hours",
+        "Keeps beverages cold for 24 hours",
+        "Touch Sensor Lid"
+      ],
+      "warranty": "1 Year",
+      "manufacture_country": "China",
+      "images": {
+        "thumbnail": "https://example.com/smart-bottle-1.jpg",
+        "full_size": "https://example.com/smart-bottle.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Hydro Flask",
+      "brand": "Hydro Flask",
+      "capacity_ml": 1000,
+      "material": "Stainless Steel",
+      "color": "Matte Black",
+      "insulated": true,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 39.99,
+      "ratings": {
+        "average": 4.8,
+        "total_reviews": 1543
+      },
+      "dimensions": {
+        "height_cm": 28,
+        "diameter_cm": 8.5,
+        "weight_g": 450
+      },
+      "availability": {
+        "in_stock": true,
+        "online": true,
+        "offline": ["Walmart", "Target", "Amazon"]
+      },
+      "features": [
+        "Double-wall vacuum insulation",
+        "Keeps beverages cold for 24 hours",
+        "Keeps beverages hot for 12 hours",
+        "Powder-coated finish for grip",
+        "Wide mouth for easy cleaning"
+      ],
+      "warranty": "Lifetime",
+      "manufacture_country": "USA",
+      "images": {
+        "thumbnail": "https://example.com/hydroflask-thumbnail.jpg",
+        "full_size": "https://example.com/hydroflask.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "name": "ThermoSteel Bottle",
+      "brand": "Milton",
+      "capacity_ml": 500,
+      "material": "Stainless Steel",
+      "color": "Silver",
+      "insulated": true,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 19.99,
+      "ratings": {
+        "average": 4.6,
+        "total_reviews": 875
+      },
+      "dimensions": {
+        "height_cm": 22,
+        "diameter_cm": 7.2,
+        "weight_g": 410
+      },
+      "availability": {
+        "in_stock": true,
+        "online": true,
+        "offline": ["Amazon", "Flipkart"]
+      },
+      "features": [
+        "Hot and Cold Retention",
+        "Sleek Design",
+        "Spill-Proof Cap",
+        "Lightweight"
+      ],
+      "warranty": "6 Months",
+      "manufacture_country": "India",
+      "images": {
+        "thumbnail": "https://example.com/milton-thermosteel.jpg",
+        "full_size": "https://example.com/milton.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sports Sipper Bottle",
+      "brand": "Nike",
+      "capacity_ml": 600,
+      "material": "Plastic",
+      "color": "Red",
+      "insulated": false,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 14.99,
+      "ratings": {
+        "average": 4.3,
+        "total_reviews": 642
+      },
+      "dimensions": {
+        "height_cm": 21,
+        "diameter_cm": 7.5,
+        "weight_g": 250
+      },
+      "availability": {
+        "in_stock": false,
+        "online": true,
+        "offline": ["Nike Store"]
+      },
+      "features": [
+        "Easy Grip",
+        "Leak-proof Cap",
+        "Durable Plastic Build"
+      ],
+      "warranty": "No Warranty",
+      "manufacture_country": "Vietnam",
+      "images": {
+        "thumbnail": "https://example.com/nike-bottle.jpg",
+        "full_size": "https://example.com/nike-full.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Glass Water Bottle",
+      "brand": "EcoLife",
+      "capacity_ml": 750,
+      "material": "Glass",
+      "color": "Transparent",
+      "insulated": false,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 22.99,
+      "ratings": {
+        "average": 4.7,
+        "total_reviews": 712
+      },
+      "dimensions": {
+        "height_cm": 24,
+        "diameter_cm": 8,
+        "weight_g": 500
+      },
+      "availability": {
+        "in_stock": true,
+        "online": true,
+        "offline": ["EcoLife Stores"]
+      },
+      "features": [
+        "Eco-friendly Glass",
+        "Silicone Sleeve for Grip",
+        "No Plastic Components"
+      ],
+      "warranty": "2 Years",
+      "manufacture_country": "Germany",
+      "images": {
+        "thumbnail": "https://example.com/ecolife-glass.jpg",
+        "full_size": "https://example.com/ecolife.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Collapsible Travel Bottle",
+      "brand": "FoldaBottle",
+      "capacity_ml": 500,
+      "material": "Silicone",
+      "color": "Green",
+      "insulated": false,
+      "leak_proof": true,
+      "bpa_free": true,
+      "price_usd": 17.99,
+      "ratings": {
+        "average": 4.2,
+        "total_reviews": 568
+      },
+      "dimensions": {
+        "height_cm": 15,
+        "diameter_cm": 7,
+        "weight_g": 210
+      },
+      "availability": {
+        "in_stock": true,
+        "online": true,
+        "offline": ["Travel Stores"]
+      },
+      "features": [
+        "Collapsible for Easy Storage",
+        "Lightweight",
+        "Flexible Material"
+      ],
+      "warranty": "1 Year",
+      "manufacture_country": "Japan",
+      "images": {
+        "thumbnail": "https://example.com/foldable-bottle.jpg",
+        "full_size": "https://example.com/foldable.jpg"
+      }
+    }
+  ]
+  

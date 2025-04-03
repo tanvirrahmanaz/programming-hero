@@ -1,28 +1,20 @@
-import { useState } from 'react'
+import { Suspense, use, useState } from 'react'
 import './App.css'
 import { add, diff, mult } from '../utilites/math/math'
+import Bottles from './components/bottles/Bottles'
+
+
+const bottlesPromise = fetch('bottles.json').then(res => res.json())
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  const sum = add( 2, 4);
-  const subs = diff( 3,2);
-  const mul = mult(2,2)
-
-  // console.log(sum, subs, mul)
-
-  const bottles = [
-    {id:1, name:'Pink Nike bottle' , price:250, color:'pink'},
-    {id:2, name:'Pink Nike bottle' , price:250, color:'pink'},
-    {id:3, name:'Pink Nike bottle' , price:250, color:'pink'},
-    {id:4, name:'Pink Nike bottle' , price:250, color:'pink'},
-  ]
-
+  
   return (
     <>
-     <h1>Hello World</h1>
+     <h1>Hello World :</h1>
+     <Suspense fallback={<h3>Bottles are loading</h3>}>
+        <Bottles bottlesPromise={bottlesPromise}></Bottles>
+     </Suspense>
     </>
   )
 }
-
 export default App
