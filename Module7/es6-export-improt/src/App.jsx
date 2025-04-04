@@ -10,10 +10,10 @@ function App() {
   
   return (
     <>
-     <h1>Hello World :</h1>
-     <Suspense fallback={<h3>Bottles are loading</h3>}>
-        <Bottles bottlesPromise={bottlesPromise}></Bottles>
-     </Suspense>
+    <h1>Hello World :</h1>
+    <Suspense>
+      <Bottles bottlesPromise={bottlesPromise}></Bottles>
+    </Suspense>
     </>
   )
 }
