@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "name": "tanivr",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample1.jpg",
+        "description": "A passionate developer with a love for clean code and creative UI.",
+        "autorImage": "https://i.ibb.co/author1.jpg",
+        "authorName": "Tanvir Ahmed",
+        "status": ["active", "verified"]
+    },
+    {
+        "id": "2",
+        "name": "mahirx",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample2.jpg",
+        "description": "Front-end enthusiast and open-source contributor.",
+        "autorImage": "https://i.ibb.co/author2.jpg",
+        "authorName": "Mahir Khan",
+        "status": ["active"]
+    },
+    {
+        "id": "3",
+        "name": "sadiq.codes",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample3.jpg",
+        "description": "Building full-stack applications and sharing tech content.",
+        "autorImage": "https://i.ibb.co/author3.jpg",
+        "authorName": "Sadiq Rahman",
+        "status": ["inactive"]
+    },
+    {
+        "id": "4",
+        "name": "ayman.dev",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample4.jpg",
+        "description": "Loves working with React, Next.js, and cloud services.",
+        "autorImage": "https://i.ibb.co/author4.jpg",
+        "authorName": "Ayman Hossain",
+        "status": ["active", "featured"]
+    },
+    {
+        "id": "5",
+        "name": "nishi.design",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample5.jpg",
+        "description": "UI/UX designer turned front-end developer.",
+        "autorImage": "https://i.ibb.co/author5.jpg",
+        "authorName": "Nishi Akter",
+        "status": ["active"]
+    },
+    {
+        "id": "6",
+        "name": "rakib.ai",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample6.jpg",
+        "description": "Exploring AI and ML with real-world projects.",
+        "autorImage": "https://i.ibb.co/author6.jpg",
+        "authorName": "Rakib Hasan",
+        "status": ["verified"]
+    },
+    {
+        "id": "7",
+        "name": "jobaerx",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample7.jpg",
+        "description": "Software engineer & cloud architect in progress.",
+        "autorImage": "https://i.ibb.co/author7.jpg",
+        "authorName": "Jobaer Siddique",
+        "status": ["active", "verified"]
+    },
+    {
+        "id": "8",
+        "name": "mehnaz.tech",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample8.jpg",
+        "description": "Backend developer with a love for system design.",
+        "autorImage": "https://i.ibb.co/author8.jpg",
+        "authorName": "Mehnaz Jahan",
+        "status": ["inactive"]
+    },
+    {
+        "id": "9",
+        "name": "fahimnext",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample9.jpg",
+        "description": "React and Next.js developer with performance in mind.",
+        "autorImage": "https://i.ibb.co/author9.jpg",
+        "authorName": "Fahim Rifat",
+        "status": ["active"]
+    },
+    {
+        "id": "10",
+        "name": "shanta.ui",
+        "coverPhoto": "https://i.ibb.co/vCGmYpP9/sample10.jpg",
+        "description": "Designing delightful user experiences for the web.",
+        "autorImage": "https://i.ibb.co/author10.jpg",
+        "authorName": "Shanta Rimi",
+        "status": ["active", "featured"]
+    }
+]
