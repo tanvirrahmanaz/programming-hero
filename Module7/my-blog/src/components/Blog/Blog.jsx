@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBookmark } from "react-icons/fa";
 
 const Blog = ({blog}) => {
     
@@ -17,6 +18,7 @@ const Blog = ({blog}) => {
     <h2 className="card-title">
       {blog.name}
       <div className="badge badge-secondary">NEW</div>
+      <FaBookmark size={25} color='red'/>
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions justify-end">
@@ -25,7 +27,7 @@ const Blog = ({blog}) => {
     </div>
   </div>
 </div>
-        </div>
+        </div>  
     );
 };
 
