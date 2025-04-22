@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 const ControlledFeild = () => {
-    const[password,setpassword] = useState('')
+    const[password,setPassword] = useState('')
+    const[error,setError] = useState('')
     const handleSubmit = (e) =>{
         e.preventDefault();
         console.log("submitted");
@@ -9,6 +10,14 @@ const ControlledFeild = () => {
     }
     const handlePassword = e =>{
         console.log(e.target.value)
+        setPassword(e.target.value)
+        
+        if(password.length < 6){
+            setError("password must be bigger than six caracter")
+        }
+        else{
+            setError('')
+        }
     }
     return (
         <div>
@@ -17,6 +26,10 @@ const ControlledFeild = () => {
                 <input type="password" name='password' placeholder='password' onChange={handlePassword} defaultValue={password} required /><br />
                 <input type="submit" value="submit" />
             </form>
+
+            <p style={{color:'red'}}>
+                <small>{error}</small>
+            </p>
         </div>
     );
 };
