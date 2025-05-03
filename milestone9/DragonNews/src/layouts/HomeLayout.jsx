@@ -4,6 +4,7 @@ import Header from '../componenets/Header';
 import LatestNews from '../componenets/LatestNews';
 import Navbar from '../componenets/Navbar';
 import LeftAside from '../componenets/homelayout/LeftAside';
+import RightAside from '../componenets/homelayout/RightAside';
 
 const HomeLayout = () => {
     return (
@@ -17,14 +18,16 @@ const HomeLayout = () => {
                     <Navbar></Navbar>
                 </nav>
             </header>
-            <main>
-                <aside>
+            <main className='w-11/12  mx-auto my-3 grid grid-cols-12'>
+                <aside className='col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>
-                <section className='main'>
+                <section className='col-span-6'>
                     <Outlet></Outlet>
                 </section>
-                <section className='right_nav'></section>
+                <aside className='col-span-3'>
+                    <RightAside></RightAside>
+                </aside>
             </main>
         </div>
     );
