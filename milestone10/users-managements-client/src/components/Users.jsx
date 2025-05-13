@@ -12,7 +12,13 @@ const Users = ({usersPromise}) => {
         console.log(User); 
 
         //create user in the server
-        fetch('http://localhost:3000/users').then(res => res.json()).then(data => {console.log(data)});
+        fetch('http://localhost:3000/users',{
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(User)
+        }).then(res => res.json()).then(data => {console.log(data)});
     }
     return ( 
         <div>
