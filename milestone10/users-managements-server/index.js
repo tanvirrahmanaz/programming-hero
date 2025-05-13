@@ -20,6 +20,11 @@ app.get('/users', (req, res) => {
 }
 )
 
+app.post('/users', (req, res) => {
+    console.log('hitting the post', req.body)
+}
+)
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
