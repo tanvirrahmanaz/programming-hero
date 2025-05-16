@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{use} from 'react';
 
-const User = () => {
+const User = ({userPromise}) => {
 
+    const initialUser = use(userPromise)
+    const [ users, setUsers] = React.useState(initialUser);
+ 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page reload on submit
         const name = e.target.name.value;
@@ -18,7 +21,15 @@ const User = () => {
             body: JSON.stringify(newUser)
         })
         .then(res => res.json())
-        .then(data => {console.log("data after creating user in the db", data)})
+        .then(data => {console.log("data after creating user in the db", data)
+            if(data.insertedId){
+                newUser._id = data.insertedId; // add the id to the new user
+                const newUsers = [...users, newUser]; // add the new user to the users array
+                setUsers(newUsers); // update the state
+                alert('user added successfully');
+                e.target.reset(); // reset the form
+            }   
+        })
     }
 
     return (
@@ -30,7 +41,13 @@ const User = () => {
                     <input type="email" name='email'/><br />
                     <input type="submit" value="Add User" />
                 </form>
-                
+            </div>
+
+            {/* view useres  */}
+            <div>
+                {
+                    users.map(user => <p key={user.id}>{user.name} : {user.email}</p>)
+                }
             </div>
         </div>
     );

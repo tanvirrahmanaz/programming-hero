@@ -41,6 +41,18 @@ async function run() {
 
     const usersCollection = client.db('simpleDB').collection('users');
 
+    app.get('/users', async (req, res) => {
+      const cursor = usersCollection.find();
+      const users = await cursor.toArray();
+      res.send(users);
+    })
+
+    app.post('/users', async (req, res) => {
+      const newUser = req.body;
+      const result = await usersCollection.insertOne(newUser); 
+      res.send(result);
+    })
+
 
     // const database = client.db('useresdb');
     // const userCollection = database.collection('users');
