@@ -38,7 +38,19 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    
+
+    const usersCollection = client.db('simpleDB').collection('users');
+
+
+    // const database = client.db('useresdb');
+    // const userCollection = database.collection('users');
+
+    // app.post('/users',async(req, res) => {
+    //   console.log('user data', req.body);
+    //   const newUser = req.body;
+    //   const result = await userCollection.insertOne(newUser);
+    //   res.send(result);
+    // } )
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
