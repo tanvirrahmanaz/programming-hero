@@ -1,4 +1,5 @@
 import React,{use} from 'react';
+import { Link } from 'react-router';
 
 const User = ({userPromise}) => {
 
@@ -69,6 +70,8 @@ const User = ({userPromise}) => {
                 {
                     users.map(user => <p key={user.id}>
                         {user.name} : {user.email}
+                        <Link to={`/users/${user._id}`}> Details</Link>
+                        <Link to={`/update/${user._id}`}> Edit</Link>
                         <button onClick={() => handleUserDelete(user._id)}>X</button>
                         </p>)
                 }
