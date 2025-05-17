@@ -34,14 +34,29 @@ const User = ({userPromise}) => {
 
 
     const handleUserDelete = (id) => {
-        console.log('delete user',id);
+        console.log('delete user',id);/ /
         // delete user from the db
+        fetch(`http://localhost:5000/users/${id}`, {
+            method: "DELETE"
+        }).then(res => res.json())
+        .then(data => {
+            if(data.deleteCount){
+
+                const remainingUsers = users.filter(user => user._id !== id);
+                 // filter out the deleted user 
+                 setUsers(remainingUsers); // update the state
+                alert('user deleted successfully');
+                console.log("data after deleting user from the db", data);
+            }
+            
+        })
     }
 
     return (
         <div>
             {/* add user */}
             <div>
+                <p>user: {users.length}</p>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name='name'/><br />
                     <input type="email" name='email'/><br />

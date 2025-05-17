@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <p>hello</p>
+      <p>simple crud operation</p>
       <User userPromise = {userPromise}></User>
     </>
   )
