@@ -1,8 +1,12 @@
 import React from 'react';
 import Lottie from 'lottie-react'
 import animationData from '../../assets/register.json';
+import { AuthContext } from '../../contexts/AuthContext/AuthContext';
+import { use } from 'react';
 
 const Register = () => {
+
+    const {createUser} = use(AuthContext)
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -12,6 +16,14 @@ const Register = () => {
 
         // Here you can add your registration logic, e.g., API call
         console.log('Email:', email, 'Password:', password);
+
+        createUser(email, password)
+        .then(result =>{
+          console.log('User created:', result.user);
+        })
+        .catch(error => {
+          console.error('Error creating user:', error);
+        });
     };
 
     return (
