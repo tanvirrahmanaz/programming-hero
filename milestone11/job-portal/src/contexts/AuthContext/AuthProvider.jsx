@@ -1,20 +1,38 @@
 // AuthProvider.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Assuming AuthContext.js is in the same directory
 import { AuthContext } from './AuthContext';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase.init'; // Adjust the import path as necessary
 
 const AuthProvider = ({ children }) => {
 
 
     const [loading, setLoading] = useState(true);
+    const [user, setUser] = useState(null);
 
 
     const createUser = (email,password) =>{
         setLoading(true);
         return createUserWithEmailAndPassword(auth ,email,password);
     }
+
+    const singInUser = (email, password) => {
+        setLoading(true);
+        return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    useEffect( () =>{
+        const unSubscribe = onAuthStateChanged(auth, currentuser => {
+            setUser(currentuser);
+            setLoading(false);
+            console.log('Current user:', currentuser);
+        }
+        )
+        return () => {
+            unSubscribe();
+        };
+    }, [] )
 
 
 
@@ -24,7 +42,9 @@ const AuthProvider = ({ children }) => {
     // For example: user, login function, logout function, etc.
     const authInfo = {
        loading,
+       user,
        createUser,
+       singInUser
     };
 
     return (

@@ -4,9 +4,10 @@ import {use} from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../../assets/login.json'; // Adjust the path as necessary
 
+
 const LogIn = () => {
 
-    const {createUser} = use(AuthContext)
+    const {singInUser} = use(AuthContext)
 
     const handleLogIn= (event) => {
         event.preventDefault();
@@ -17,12 +18,12 @@ const LogIn = () => {
         // Here you can add your registration logic, e.g., API call
         console.log('Email:', email, 'Password:', password);
 
-        createUser(email, password)
+        singInUser(email, password)
         .then(result =>{
-          console.log('User created:', result.user);
+          console.log('User singIn:', result.user);
         })
         .catch(error => {
-          console.error('Error creating user:', error);
+          console.error('Error singIn user:', error);
         });
     };
 
@@ -43,7 +44,7 @@ const LogIn = () => {
           <label className="label">Password</label>
           <input type="password" name='password' className="input" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Register</button>
+          <button className="btn btn-neutral mt-4">LignIn</button>
         </fieldset>
         </form>
       </div>
