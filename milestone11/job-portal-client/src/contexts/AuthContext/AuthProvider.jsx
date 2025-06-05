@@ -55,7 +55,7 @@ const AuthProvider = ({ children }) => {
     // For example: user, login function, logout function, etc.
     const authInfo = {
        loading,
-       user,
+       user, 
        createUser,
        singInUser,
        signInWithGoogle,
