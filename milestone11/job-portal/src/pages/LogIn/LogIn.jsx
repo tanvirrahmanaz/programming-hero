@@ -3,6 +3,7 @@ import { AuthContext } from '../../contexts/AuthContext/AuthContext';
 import {use} from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../../assets/login.json'; // Adjust the path as necessary
+import SocialLogin from '../Shared/SocialLogin';
 
 
 const LogIn = () => {
@@ -47,6 +48,7 @@ const LogIn = () => {
           <button className="btn btn-neutral mt-4">LignIn</button>
         </fieldset>
         </form>
+        <SocialLogin>  </SocialLogin>
       </div>
     </div>
   </div>

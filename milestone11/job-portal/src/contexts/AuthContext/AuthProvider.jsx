@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from 'react';
 // Assuming AuthContext.js is in the same directory
 import { AuthContext } from './AuthContext';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth } from '../../firebase/firebase.init'; // Adjust the import path as necessary
 import { signOut } from 'firebase/auth'; // Import signOut from firebase/auth
+
+const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
 
@@ -22,6 +24,12 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
+
+    const signInWithGoogle = () => {
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider)
+    }
+       
 
     const singOutUser = () => {
         setLoading(true);
@@ -50,7 +58,8 @@ const AuthProvider = ({ children }) => {
        user,
        createUser,
        singInUser,
-    singOutUser,
+       signInWithGoogle,
+       singOutUser,
     };
 
     return (
