@@ -34,7 +34,7 @@ const Navbar = () => {
         </li>
         <li>
             <NavLink 
-                to="/about" 
+                to="/my-applications" 
                 className={({ isActive }) => 
                     `font-medium transition-colors duration-200 ${
                         isActive 
@@ -43,7 +43,7 @@ const Navbar = () => {
                     }`
                 }
             >
-                About
+                My Applications
             </NavLink>
         </li>
         <li>

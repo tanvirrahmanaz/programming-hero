@@ -9,6 +9,7 @@ import LogIn from "../pages/LogIn/LogIn";
 import JobDetails from "../pages/DetailsPage/JobDetails";
 import PrivateRoute from "../routes/PrivateRoute";
 import JobApply from "../pages/JobApply/JobApply";
+import MyApplications from "../MyApplication/MyApplication";
 
 
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         {
           path: "login",
           element: <LogIn></LogIn>
+        },
+        {
+          path: "my-applications",
+          element: <PrivateRoute><MyApplications></MyApplications></PrivateRoute>
         }
     ]
   },
