@@ -1,0 +1,196 @@
+/* বেসিক স্টাইল */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-container {
+    margin-top: 15px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #ec971f;
+}
+
+/* কলাম লেআউট */
+.main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.drinks-grid {
+    flex: 3; /* বাম কলাম বেশি জায়গা নেবে */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.group-section {
+    flex: 1; /* ডান কলাম কম জায়গা নেবে */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    align-self: flex-start; /* উপরে থাকার জন্য */
+}
+
+.group-section h2 {
+    margin-top: 0;
+}
+
+#group-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#group-list li {
+    background-color: #f9f9f9;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+/* ড্রিংক কার্ড স্টাইল */
+.drink-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px;
+    text-align: center;
+}
+
+.drink-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.drink-card h3 {
+    margin: 10px 0 5px;
+}
+
+.drink-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.drink-card .buttons {
+    margin-top: 15px;
+}
+
+.drink-card button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-details {
+    background-color: #5bc0de;
+    color: white;
+    border-color: #46b8da;
+}
+
+/* মডাল স্টাইল */
+.modal-hidden {
+    display: none;
+}
+
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#modal-body img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.btn-selected {
+    background-color: #6c757d; /* ধূসর রঙ */
+    color: white;
+    cursor: not-allowed; /* কার্সার পরিবর্তন করে বোঝানো হবে এটি আর ক্লিক করা যাবে না */
+    border-color: #6c757d;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.cart-table th, .cart-table td {
+    text-align: left;
+    padding: 8px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-table th {
+    font-weight: bold;
+    color: #555;
+}
+
+.cart-item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* ছবিকে গোলাকার করার জন্য */
+    object-fit: cover; /* ছবির অনুপাত ঠিক রাখার জন্য */
+}

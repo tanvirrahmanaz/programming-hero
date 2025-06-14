@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Find Your Favorite Cocktail</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a cocktail...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div id="drinks-container" class="drinks-grid">
+            </div>
+
+       <div class="group-section">
+    <h2>Total Cart: <span id="group-count">0</span></h2>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>Img</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+            </tbody>
+    </table>
+</div>
+    </main>
+
+    <div id="modal-container" class="modal-hidden">
+        <div id="modal-content">
+            <button id="modal-close-button">&times;</button>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
