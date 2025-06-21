@@ -153,6 +153,3 @@ document.addEventListener('DOMContentLoaded', () => {
     hideModal();
     fetchDrinks('margarita');
 });
-
-
-
