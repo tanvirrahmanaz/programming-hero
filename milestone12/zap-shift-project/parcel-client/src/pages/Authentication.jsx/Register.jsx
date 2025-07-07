@@ -9,6 +9,8 @@ const Register = () => {
         formState: { errors } 
     } = useForm();
 
+    const { createUser } = useAuth(); // Assuming you have a useAuth hook to access auth functions
+
     // We use watch to get the value of the password field in real-time
     const password = watch("password", "");
 
@@ -17,6 +19,20 @@ const Register = () => {
         console.log('Registration Data:', data);
         // Ekhane apni apnar registration logic implement korben
         // For example: Firebase user creation, API call to your backend etc.
+
+        createUser(data.email, data.password)
+            .then((result) => {
+                // Signed in
+                const user = result.user;
+                console.log('User registered successfully:', user);
+                // Redirect or show success message
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error('Error during registration:', errorCode, errorMessage);
+                // Handle error (e.g., show error message to user)
+            });
     };
 
     return (
