@@ -6,3 +6,9 @@ arraylikeobject
 getelementbyclass vs getelementby ID 
 innertext
 getElementByQuerySelector, querySelectorAll 
+ Dynamic style, getAttribute, setAttribute,
+  innerText, innerHTML
+
+  NodeList, htmlcollection, 
+  parentNode, childnodes, createElement
+  appendChild
