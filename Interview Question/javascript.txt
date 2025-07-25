@@ -1,0 +1,8 @@
+DOM: document object model
+
+traversing dom - getelements by tag name
+document.getelementsby tagname 
+arraylikeobject
+getelementbyclass vs getelementby ID 
+innertext
+getElementByQuerySelector, querySelectorAll 
