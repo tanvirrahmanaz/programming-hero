@@ -12,3 +12,10 @@ getElementByQuerySelector, querySelectorAll
   NodeList, htmlcollection, 
   parentNode, childnodes, createElement
   appendChild
+
+
+javascript es6
+
+ES6 Intro difference between var, Let, and const
+
+ Template string, multiple line string, dynamic string
