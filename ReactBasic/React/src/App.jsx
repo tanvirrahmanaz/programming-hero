@@ -1,6 +1,7 @@
 
 import './App.css'
 import Book from './Book'
+import SubscribeButton from './Dashboard'
 
 function App() {
 
@@ -24,8 +25,8 @@ function App() {
     {/* props er exmple end  */}
 
 
+    <SubscribeButton></SubscribeButton>
 
-    
     </>
   )
 }
